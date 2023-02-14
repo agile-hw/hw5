@@ -50,7 +50,7 @@ class Cache(val p: CacheParams) extends Module {
 			val write = Bool()
 			val wData = UInt(p.bitsPerWord.W)
 		}))
-		val hit = Output(Bool())									// helpful for testing
+		val hit = Output(Bool())                  // helpful for testing
 		val out = Valid(UInt(p.bitsPerWord.W))		// sets valid to true to indicate completion (even for writes)
 	})
 
